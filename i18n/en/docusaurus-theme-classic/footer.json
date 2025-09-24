@@ -1,14 +1,14 @@
 {
-  "link.item.label.GitHub": {
-    "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/yurvon-screamo/specification-driven-development/"
-  },
-  "copyright": {
-    "message": "Copyright © {year} yurvon_screamo · ていねいに作りました.",
-    "description": "The footer copyright"
-  },
-  "link.title.Source": {
-    "message": "Source",
-    "description": "The title of the footer links column with title=Source in the footer"
-  }
+	"link.item.label.GitHub": {
+		"message": "GitHub",
+		"description": "The label of footer link with label=GitHub linking to https://github.com/yurvon-screamo/specification-driven-development/"
+	},
+	"copyright": {
+		"message": "Copyright © 2025 yurvon_screamo · ていねいに作りました.",
+		"description": "The footer copyright"
+	},
+	"link.title.Source": {
+		"message": "Source",
+		"description": "The title of the footer links column with title=Source in the footer"
+	}
 }
