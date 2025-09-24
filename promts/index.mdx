@@ -1,16 +1,23 @@
 ---
 id: index
 title: 🤖 Prompts for work with AI
-sidebar_label: Prompts
-slug: /
+hide_table_of_contents: true
 ---
 
 Choose the appropriate context for working with the AI assistant depending on your task:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import DocCardList from '@theme/DocCardList';
 import CopyButton from '@site/src/components/CopyButton';
+
+import StandardsDoc from '@site/docs/standards.mdx';
+import MethodologyDoc from '@site/docs/methodology.mdx';
+import RequirementsPhaseDoc from '@site/docs/requirements_phase.mdx';
+import DesignPhaseDoc from '@site/docs/design_phase.mdx';
+import TasksPhaseDoc from '@site/docs/tasks_phase.mdx';
+import SteeringDocumentsDoc from '@site/docs/steering_documents.mdx';
+import MicroSpecificationDoc from '@site/docs/micro_specification.mdx';
+import QuickSpecificationDoc from '@site/docs/quick_specification.mdx';
 
 <Tabs
   defaultValue="context"
@@ -21,8 +28,6 @@ import CopyButton from '@site/src/components/CopyButton';
     {label: '🎯 Guiding', value: 'steering'},
   ]}>
   <TabItem value="context">
-
-<CopyButton />
 
 ## 📋 Context for work with full specification
 
@@ -41,49 +46,25 @@ This prompt contains a full set of methodologies and standards for creating a de
 This prompt contains a full set of methodologies and standards for creating a detailed specification of the project.
 :::
 
-<DocCardList items={[
-  {
-    type: 'link',
-    label: '📋 Standards and Methodological References',
-    href: '/documents/standards',
-    description: 'Industry standards, methodologies, and best practices for SDD'
-  },
-  {
-    type: 'link', 
-    label: '🔧 Methodology',
-    href: '/documents/methodology',
-    description: 'Step-by-step processes for creating specifications'
-  },
-  {
-    type: 'link',
-    label: '📝 Requirements Phase', 
-    href: '/documents/requirements_phase',
-    description: 'Detailed stages of collecting and analyzing requirements'
-  },
-  {
-    type: 'link',
-    label: '🏗️ Design Phase',
-    href: '/documents/design_phase', 
-    description: 'Processes of architectural planning'
-  },
-  {
-    type: 'link',
-    label: '✅ Tasks Phase',
-    href: '/documents/tasks_phase',
-    description: 'Management of tasks and their prioritization'
-  },
-  {
-    type: 'link',
-    label: '📊 Steering Documents',
-    href: '/documents/steering_documents',
-    description: 'Standards and guiding principles'
-  }
-]} />
+---
 
-  </TabItem>
+<CopyButton/>
+
+
+<StandardsDoc />
+
+<MethodologyDoc />
+
+<RequirementsPhaseDoc />
+
+<DesignPhaseDoc />
+
+<TasksPhaseDoc />
+
+<SteeringDocumentsDoc />
+
+</TabItem>
   <TabItem value="micro_context">
-
-<CopyButton />
 
 ## ⚡ Context for work with micro-specification
 
@@ -100,37 +81,20 @@ Optimized prompt for quickly creating compact specifications. Includes:
 Optimized prompt for quickly creating compact specifications for small projects.
 :::
 
-<DocCardList items={[
-  {
-    type: 'link',
-    label: '📋 Standards and Methodological References',
-    href: '/documents/standards',
-    description: 'Key principles EARS and basic standards'
-  },
-  {
-    type: 'link', 
-    label: '🔧 Methodology',
-    href: '/documents/methodology',
-    description: 'Simplified processes for micro-specifications'
-  },
-  {
-    type: 'link',
-    label: '⚡ Micro-specification',
-    href: '/documents/micro_specification', 
-    description: 'Templates for quick documentation'
-  },
-  {
-    type: 'link',
-    label: '📊 Steering Documents',
-    href: '/documents/steering_documents',
-    description: 'Minimum necessary standards'
-  }
-]} />
+---
+
+<CopyButton/>
+
+<StandardsDoc />
+
+<MethodologyDoc />
+
+<MicroSpecificationDoc />
+
+<SteeringDocumentsDoc />
 
   </TabItem>
   <TabItem value="quick_context">
-
-<CopyButton />
 
 ## 🚀 Context for work with quick specification
 
@@ -147,37 +111,20 @@ Maximum simplified prompt for creating specifications in a short time. Includes:
 Maximum simplified prompt for creating specifications in a short time for prototypes and MVP.
 :::
 
-<DocCardList items={[
-  {
-    type: 'link',
-    label: '📋 Standards and Methodological References',
-    href: '/documents/standards',
-    description: 'Only the most necessary principles'
-  },
-  {
-    type: 'link', 
-    label: '🔧 Methodology',
-    href: '/documents/methodology',
-    description: 'Accelerated processes for quick development'
-  },
-  {
-    type: 'link',
-    label: '🚀 Quick specification',
-    href: '/documents/quick_specification', 
-    description: 'Minimalist templates for rapid prototyping'
-  },
-  {
-    type: 'link',
-    label: '📊 Steering Documents',
-    href: '/documents/steering_documents',
-    description: 'Only critical standards'
-  }
-]} />
+---
+
+<CopyButton/>
+
+<StandardsDoc />
+
+<MethodologyDoc />
+
+<QuickSpecificationDoc />
+
+<SteeringDocumentsDoc />
 
   </TabItem>
   <TabItem value="steering">
-
-<CopyButton />
 
 ## 🎯 Context for Guiding
 
@@ -196,59 +143,22 @@ Specialized prompt for guiding and steering. Includes:
 Specialized prompt for guiding, steering the team and making guiding decisions.
 :::
 
-<DocCardList items={[
-  {
-    type: 'link',
-    label: '📋 Standards and Methodological References',
-    href: '/documents/standards',
-    description: 'Principles of effective guiding'
-  },
-  {
-    type: 'link', 
-    label: '🔧 Methodology',
-    href: '/documents/methodology',
-    description: 'Processes of coordination and control'
-  },
-  {
-    type: 'link',
-    label: '📝 Requirements Phase', 
-    href: '/documents/requirements_phase',
-    description: 'Management of requirements'
-  },
-  {
-    type: 'link',
-    label: '🏗️ Design Phase',
-    href: '/documents/design_phase', 
-    description: 'Coordination of architectural decisions'
-  },
-  {
-    type: 'link',
-    label: '✅ Tasks Phase',
-    href: '/documents/tasks_phase',
-    description: 'Management of tasks and resources'
-  },
-  {
-    type: 'link',
-    label: '📊 Steering Documents',
-    href: '/documents/steering_documents',
-    description: 'Standards and procedures of management'
-  }
-]} />
+---
+
+<CopyButton/>
+
+<StandardsDoc />
+
+<MethodologyDoc />
+
+<RequirementsPhaseDoc />
+
+<DesignPhaseDoc />
+
+<TasksPhaseDoc />
+
+<SteeringDocumentsDoc />
 
   </TabItem>
 </Tabs>
-
-## 🎯 How to use
-
-1. **Select the appropriate tab** depending on your task
-2. **Click on the relevant documents** to access the full content
-3. **Copy the content** from the documents you need
-4. **Insert into the AI assistant** before starting work
-
----
-
-:::tip 💡 Advice
-For maximum efficiency, use the prompt that most accurately matches the scale and complexity of your project. Click on the document cards to access the full content.
-:::
-
  

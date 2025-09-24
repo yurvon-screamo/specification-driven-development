@@ -51,10 +51,6 @@ const config: Config = {
 					path: "./docs",
 					routeBasePath: "documents",
 					sidebarPath: "./sidebars.ts",
-					// Please change this to your repo.
-					// Remove this to remove the "edit this page" links.
-					editUrl:
-						"https://github.com/yurvon_screamo/specification-driven-development/tree/main/packages/create-docusaurus/templates/shared/",
 				},
 				blog: false,
 				theme: {
@@ -71,7 +67,6 @@ const config: Config = {
 				id: "prompts",
 				path: "./promts",
 				routeBasePath: "prompts",
-				sidebarPath: "./sidebars-prompts.ts",
 			},
 		],
 	],
@@ -93,11 +88,9 @@ const config: Config = {
 					label: "📋 Документация",
 				},
 				{
-					type: "docSidebar",
-					sidebarId: "promptsSidebar",
+					to: "/prompts",
 					position: "left",
 					label: "🤖 Промпты",
-					docsPluginId: "prompts",
 				},
 				{
 					type: "localeDropdown",
@@ -128,6 +121,10 @@ const config: Config = {
 		prism: {
 			theme: prismThemes.ultramin,
 			darkTheme: prismThemes.dracula,
+		},
+		docs: {
+			sidebar: {
+			},
 		},
 	} satisfies Preset.ThemeConfig,
 };
