@@ -1,0 +1,309 @@
+/**
+ * uwuwu スタック - かわいいデザイン
+ * Beautiful Japanese-inspired design with gradient backgrounds
+ */
+
+/* Import MapleMono font */
+@font-face {
+  font-family: 'MapleMono';
+  src: url('/MapleMono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom CSS variables for uwuwu theme */
+:root {
+  /* uwuwu color palette */
+  --bg-start: #fde2ff;
+  --bg-end: #e0f3ff;
+  --card-bg: #ffffffcc;
+  --text: #2b2b2b;
+  --accent: #8b5cf6;
+  --muted: #6b7280;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+  
+  /* Override Docusaurus defaults */
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
+  
+  /* Background and layout */
+  --ifm-background-color: transparent;
+  --ifm-background-surface-color: var(--card-bg);
+  --ifm-font-family-base: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] {
+  --bg-start: #1a0b2e;
+  --bg-end: #16213e;
+  --card-bg: #1f2937cc;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  
+  --ifm-color-primary: #a78bfa;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c3aed;
+  --ifm-color-primary-darkest: #6d28d9;
+  --ifm-color-primary-light: #c4b5fd;
+  --ifm-color-primary-lighter: #ddd6fe;
+  --ifm-color-primary-lightest: #ede9fe;
+  --docusaurus-highlighted-code-line-bg: rgba(167, 139, 250, 0.2);
+}
+
+/* Global body styling */
+html, body {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  min-height: 100vh;
+  color: var(--text);
+  font-family: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 14px;
+}
+
+/* Main content area */
+.main-wrapper {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero__title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--accent), #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero buttons container */
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Specific styles for buttons container in hero */
+.hero div[class*="buttons"] {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Alternative selector for buttons container */
+.hero div:has(.button) {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+/* Card-like containers - only for hero section */
+.hero {
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  margin: 1rem;
+  padding: 2rem;
+}
+
+/* Main content containers should remain normal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+/* Buttons with uwuwu style */
+.button {
+  background: var(--accent);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.12s ease;
+  box-shadow: var(--shadow);
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.2);
+  color: white;
+  text-decoration: none;
+}
+
+.button:active {
+  transform: translateY(0);
+  filter: brightness(0.98);
+}
+
+/* Secondary button styling */
+.button--secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.button--secondary:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* Navigation styling */
+.navbar {
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  box-shadow: var(--shadow);
+  border-radius: 0 0 20px 20px;
+  color: var(--text);
+}
+
+.navbar a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navbar__brand {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* Footer styling */
+.footer {
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 20px 20px 0 0;
+  margin-top: 2rem;
+  color: var(--text);
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.footer .footer__copyright {
+  color: var(--muted);
+}
+
+/* Feature cards */
+.feature {
+  background: var(--card-bg);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+/* Cute badge styling */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f3ff;
+  color: var(--accent);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* Cute text styling */
+.cute {
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Apply MapleMono font to various elements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+.navbar__brand,
+.navbar__item,
+.footer__title,
+.footer__link-item {
+  font-family: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Code blocks should use MapleMono */
+pre, code, .token {
+  font-family: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Apply to all text elements */
+* {
+  font-family: 'MapleMono', ui-monospace, 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .container, .row {
+    margin: 0.5rem;
+    padding: 1.5rem;
+  }
+}
