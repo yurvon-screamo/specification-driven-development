@@ -1,23 +1,23 @@
-# 🎯 Guiding Documents
+# 🎯 Steering Documents
 
 **Objective:** Ensure consistency, quality, and efficiency in development by creating and maintaining a set of living, atomic documents that serve as the project’s shared context and guide the team in implementing any work items—from micro-specifications to large features.
 
 ## Core Principles
 
-Guiding documents are not static artifacts but dynamic knowledge management and quality assurance tools. Their creation and maintenance are governed by the following key principles:
+Steering documents are not static artifacts but dynamic knowledge management and quality assurance tools. Their creation and maintenance are governed by the following key principles:
 
 1. **Atomicity and Focus:** Each document must focus on a single, specific topic (e.g., `git_workflow`, `react_component_structure`, `postgres_naming_conventions`). Avoid creating monolithic, all-encompassing manuals.
 2. **Living Documentation:** Documents must be regularly updated as the project, technologies, and best practices evolve. Outdated documentation is worse than no documentation at all.
 3. **Practical Orientation:** Content must be directly applicable by developers in their day-to-day work. Focus on the “how” and “why,” not abstract theories.
 4. **Contextuality:** Documents may be global (applying to the entire solution) or local (specific to a particular module, microservice, or component). Clearly indicate the scope of applicability.
-5. **Integration into Workflow:** Guiding documents are an integral part of the specification-driven development process. They must be explicitly referenced in design specifications and considered during task planning.
+5. **Integration into Workflow:** Steering documents are an integral part of the specification-driven development process. They must be explicitly referenced in design specifications and considered during task planning.
 6. **Ownership of Currency:** It is recommended to create dedicated tasks within specifications for maintaining the currency of guiding documents, especially after significant changes to the codebase or infrastructure.
 
 ---
 
-## Primary Categories of Guiding Documents
+## Primary Categories of Steering Documents
 
-To ensure comprehensive coverage of the development lifecycle, guiding documents are grouped into the following categories:
+To ensure comprehensive coverage of the development lifecycle, steering documents are grouped into the following categories:
 
 ### 1. Development Environment and Infrastructure Standards
 
@@ -28,7 +28,7 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
   * `build_and_deployment_processes`: Build scripts, CI/CD pipeline configurations, deployment procedures across environments.
   * `infrastructure_as_code_standards`: Standards for Terraform, CloudFormation, etc.
 
-### 2. Code Quality Guidelines
+### 2. Code Quality Standards
 
 * **Objective:** Maintain high code quality, readability, and maintainability.
 * **Example Documents:**
@@ -79,7 +79,7 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
 
 ### Step 1: Needs Assessment and Planning
 
-* **Objective:** Determine which guiding document is needed and plan its creation.
+* **Objective:** Determine which steering document is needed and plan its creation.
 * **Process:**
     1. **Project Analysis:** Review the current codebase to identify inconsistencies or areas where the absence of standards leads to errors.
     2. **Gap Identification:** Determine which standard category is missing or requires updating.
@@ -94,7 +94,7 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
     1. **Research Best Practices:** Use industry standards (e.g., Google Style Guides, 12-factor app) as a foundation.
     2. **Project Contextualization:** Adapt general practices to the project’s specific technologies, constraints, and goals.
     3. **Include Examples:** Always provide concrete, working code samples, configuration files, or diagrams. “Show, don’t tell.”
-    4. **Link Integration:** Connect the new document to other guiding documents and relevant sections of design specifications.
+    4. **Link Integration:** Connect the new document to other steering documents and relevant sections of design specifications.
     5. **Formalization:** Use clear, unambiguous language. Avoid terms like “should” or “recommended” where “must” or “must not” can be used instead.
 
 ### Step 3: Validation and Approval
@@ -103,7 +103,7 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
 * **Quality Criteria:**
   * **Actionability:** Can a developer immediately apply these rules in practice?
   * **Clarity:** Is the document understandable to a new team member?
-  * **Consistency:** Does it contradict other guiding documents or approved design specifications?
+  * **Consistency:** Does it contradict other steering documents or approved design specifications?
   * **Completeness:** Does it cover all key aspects of the stated topic?
   * **Relevance:** Is it based on the current state of the project and technologies?
 * **Process:** Conduct a document review with key developers and architects. Obtain formal approval from the technical lead.
@@ -112,13 +112,13 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
 
 * **Objective:** Keep the document current throughout the project’s lifecycle.
 * **Process:**
-    1. **Regular Review:** Periodically verify the currency of all guiding documents.
+    1. **Regular Review:** Periodically verify the currency of all steering documents.
     2. **Update upon Changes:** Any significant change to architecture, technology stack, or processes **must** be accompanied by updates to relevant guiding documents. This may be handled as a separate task within the corresponding specification.
     3. **Remove Obsolete Content:** Do not hesitate to delete documents or sections that are no longer relevant. Maintain “minimal sufficiency.”
 
 ---
 
-## Guiding Documents Quality Checklist
+## Steering Documents Quality Checklist
 
 > (Completed after document creation or update)
 
@@ -129,10 +129,8 @@ To ensure comprehensive coverage of the development lifecycle, guiding documents
 | Includes concrete, working examples                                       | ☐    |         |
 | Provides justification for key rules and decisions                         | ☐    |         |
 | Contains no confidential data or secrets                                  | ☐    |         |
-| No conflicts with other guiding documents                                 | ☐    |         |
+| No conflicts with other steering documents                                 | ☐    |         |
 | Language is clear, unambiguous, and uses “must”/“must not”                | ☐    |         |
-| Includes links to related guiding documents and specifications            | ☐    |         |
+| Includes links to related steering documents and specifications            | ☐    |         |
 | Specifies scope (global/component) and owners                             | ☐    |         |
 | Plans for regular review and updates                                      | ☐    |         |
-
----
