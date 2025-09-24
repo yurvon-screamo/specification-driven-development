@@ -10,7 +10,6 @@
 
 # Auto-generated prompts
 /promts/*.md
-!/promts/README.md
 
 # Misc
 .DS_Store

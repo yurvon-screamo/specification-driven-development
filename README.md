@@ -51,7 +51,7 @@
 
 ### Структура переводов
 
-```
+```md
 i18n/
 ├── en/                          # Английские переводы
 │   ├── code.json               # Переводы React компонентов
@@ -93,21 +93,12 @@ i18n/
 npm run write-translations -- --locale en
 npm run write-translations -- --locale ru
 
-# Запуск в режиме разработки
-npm run start -- --locale en    # Английская версия
-npm run start -- --locale ru    # Русская версия
+npm run start -- --locale en
+npm run start -- --locale ru 
 
-# Сборка для продакшена
-npm run build -- --locale en    # Английская версия
-npm run build -- --locale ru     # Русская версия
+npm run build -- --locale en  
+npm run build -- --locale ru 
 ```
-
-### Лучшие практики
-
-* **Всегда добавляйте `description`** для переводчиков
-* **Используйте осмысленные ID** (например, `homepage.hero.title`)
-* **Не добавляйте fallback тексты** в React компоненты - только ID и description
-* **Тестируйте оба языка** перед коммитом
 
 ## Контекст для промтов
 
