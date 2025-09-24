@@ -38,14 +38,17 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/documents/standards"
+						to="/methodology/standards"
 					>
 						<Translate
 							id="homepage.hero.documentationButton"
 							description="The documentation button text"
 						/>
 					</Link>
-					<Link className="button button--outline button--lg" to="/prompts/">
+					<Link
+						className="button button--outline button--lg"
+						to="/prompts/full_specification"
+					>
 						<Translate
 							id="homepage.hero.promptsButton"
 							description="The prompts button text"

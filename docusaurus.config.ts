@@ -8,7 +8,7 @@ const config: Config = {
 	title: "Specification Driven Development",
 	favicon: "img/favicon.ico",
 
-	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+	// Future flags, see https://docusaurus.io/methodology/api/docusaurus-config#future
 	future: {
 		v4: true, // Improve compatibility with the upcoming Docusaurus v4
 	},
@@ -48,10 +48,9 @@ const config: Config = {
 			"classic",
 			{
 				docs: {
-					path: "./docs",
-					routeBasePath: "documents",
+					path: "./methodology",
+					routeBasePath: "methodology",
 					sidebarPath: "./sidebars.ts",
-					editUrl: "https://github.com/yurvon-screamo/specification-driven-development/tree/main/",
 				},
 				blog: false,
 				theme: {
@@ -87,8 +86,7 @@ const config: Config = {
 					type: "docSidebar",
 					sidebarId: "docsSidebar",
 					position: "left",
-					label: "📋 Документация",
-					docsPluginId: "default",
+					label: "📋 Документация"
 				},
 				{
 					type: "docSidebar",
