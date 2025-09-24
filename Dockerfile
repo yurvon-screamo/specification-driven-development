@@ -3,10 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci --only=production
 COPY . .
-
-# Build for all locales
-RUN npm run build -- --locale en
-RUN npm run build -- --locale ru
+RUN npm run build
 
 FROM nginx:alpine
 COPY --from=builder /app/build /usr/share/nginx/html
