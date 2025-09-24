@@ -41,6 +41,8 @@ const config: Config = {
 			"classic",
 			{
 				docs: {
+					path: "./documents",
+					routeBasePath: "documents",
 					sidebarPath: "./sidebars.ts",
 					// Please change this to your repo.
 					// Remove this to remove the "edit this page" links.
@@ -51,6 +53,18 @@ const config: Config = {
 					customCss: "./src/css/custom.css",
 				},
 			} satisfies Preset.Options,
+		],
+	],
+
+	plugins: [
+		[
+			"@docusaurus/plugin-content-docs",
+			{
+				id: "prompts",
+				path: "./promts",
+				routeBasePath: "prompts",
+				sidebarPath: "./sidebars-prompts.ts",
+			},
 		],
 	],
 
@@ -66,9 +80,16 @@ const config: Config = {
 			items: [
 				{
 					type: "docSidebar",
-					sidebarId: "tutorialSidebar",
+					sidebarId: "docsSidebar",
 					position: "left",
-					label: "📚 チュートリアル",
+					label: "📋 Документация",
+				},
+				{
+					type: "docSidebar",
+					sidebarId: "promptsSidebar",
+					position: "left",
+					label: "🤖 Промпты",
+					docsPluginId: "prompts",
 				},
 				{
 					href: "https://github.com/yurvon-screamo/specification-driven-development/",

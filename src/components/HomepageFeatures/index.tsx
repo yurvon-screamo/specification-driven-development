@@ -11,32 +11,50 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
 	{
-		title: "Easy to Use",
+		title: "Для разработчика",
 		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
 		description: (
 			<>
-				Docusaurus was designed from the ground up to be easily installed and
-				used to get your website up and running quickly.
+				<strong>Четкое ТЗ:</strong> Понимание что нужно сделать, а не почему,
+				прежде чем писать код
+				<br />
+				<strong>Готовый план:</strong> Технический дизайн с архитектурой,
+				данными и обработкой ошибок
+				<br />
+				<strong>Меньше стресса:</strong> Проблемы выявляются на этапе
+				планирования, а не в production
 			</>
 		),
 	},
 	{
-		title: "Focus on What Matters",
+		title: "Для менеджера/тимлида",
 		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
 		description: (
 			<>
-				Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-				ahead and move your docs into the <code>docs</code> directory.
+				<strong>Точные оценки:</strong> Реалистичные сроки и эффективное
+				распределение ресурсов
+				<br />
+				<strong>Прозрачность:</strong> Полная картина сложности задачи и
+				прогресса команды
+				<br />
+				<strong>Управление рисками:</strong> Технические проблемы выявляются до
+				начала работ
 			</>
 		),
 	},
 	{
-		title: "Powered by React",
+		title: "Для заказчика/продуктового менеджера",
 		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
 		description: (
 			<>
-				Extend or customize your website layout by reusing React. Docusaurus can
-				be extended while reusing the same header and footer.
+				<strong>Гарантия результата:</strong> Будет построено именно то, что
+				нужно бизнесу
+				<br />
+				<strong>Ясная коммуникация:</strong> Спецификации как единый язык
+				обсуждения функциональности
+				<br />
+				<strong>AI-ready:</strong> Спецификации и направляющие - идеальный
+				контекст AI-агента
 			</>
 		),
 	},
@@ -61,8 +79,8 @@ export default function HomepageFeatures(): ReactNode {
 		<section className={styles.features}>
 			<div className="container">
 				<div className="row">
-					{FeatureList.map((props, idx) => (
-						<Feature key={idx} {...props} />
+					{FeatureList.map((props) => (
+						<Feature key={props.title} {...props} />
 					))}
 				</div>
 			</div>

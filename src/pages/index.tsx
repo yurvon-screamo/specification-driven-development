@@ -13,17 +13,28 @@ function HomepageHeader() {
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
 				<div className={clsx("badge", styles.heroBadge)} aria-hidden="true">
-					🌸 uwuwu スタック
+					🚀 Specification Driven Development
 				</div>
 				<Heading as="h1" className="hero__title">
-					ようこそ、<span className="cute">uwuwu.net</span> スタックへ！
+					Разработка на основе <span className="cute">спецификаций</span>
 				</Heading>
+				<p className="hero__subtitle">
+					Единый, структурированный подход к разработке программного
+					обеспечения, который гарантирует качество, поддерживаемость и
+					соответствие бизнес-требованиям
+				</p>
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/intro"
+						to="/documents/standards"
 					>
-						📚 チュートリアル - 5分 ⏱️
+						📋 Документация
+					</Link>
+					<Link
+						className="button button--outline button--lg"
+						to="/prompts/context"
+					>
+						🤖 Промпты
 					</Link>
 				</div>
 			</div>
@@ -35,8 +46,8 @@ export default function Home(): ReactNode {
 	const { siteConfig } = useDocusaurusContext();
 	return (
 		<Layout
-			title={`Hello from ${siteConfig.title}`}
-			description="Description will go into a meta tag in <head />"
+			title="Разработка на основе спецификаций"
+			description="Единый, структурированный подход к разработке программного обеспечения с гарантией качества и соответствия бизнес-требованиям"
 		>
 			<HomepageHeader />
 			<main>
