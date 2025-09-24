@@ -24,9 +24,6 @@ function HomepageHeader() {
 					<Translate
 						id="homepage.hero.title"
 						description="The main title of the homepage"
-						values={{
-							specifications: <span className="cute">спецификаций</span>,
-						}}
 					/>
 				</Heading>
 				<p className="hero__subtitle">

@@ -251,7 +251,7 @@
 		"description": "The badge text in the hero section"
 	},
 	"homepage.hero.title": {
-		"message": "Specification-driven {specifications}",
+		"message": "Specification-driven-development",
 		"description": "The main title of the homepage"
 	},
 	"homepage.hero.subtitle": {
