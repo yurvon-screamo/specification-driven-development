@@ -89,7 +89,6 @@ i18n/
 ### Команды для работы с переводами
 
 ```bash
-npm run write-translations
 npm run write-translations -- --locale en
 npm run write-translations -- --locale ru
 
