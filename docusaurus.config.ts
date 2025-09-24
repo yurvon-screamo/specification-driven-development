@@ -51,6 +51,7 @@ const config: Config = {
 					path: "./docs",
 					routeBasePath: "documents",
 					sidebarPath: "./sidebars.ts",
+					editUrl: "https://github.com/yurvon-screamo/specification-driven-development/tree/main/",
 				},
 				blog: false,
 				theme: {
@@ -65,7 +66,7 @@ const config: Config = {
 			"@docusaurus/plugin-content-docs",
 			{
 				id: "prompts",
-				path: "./promts",
+				path: "./prompts",
 				routeBasePath: "prompts",
 				sidebarPath: "./sidebars-prompts.ts",
 			},
