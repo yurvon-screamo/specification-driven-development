@@ -19,21 +19,41 @@ const CopyButton: React.FC<CopyButtonProps> = ({
 
 	const handleCopy = async () => {
 		try {
-			// Find the active tab content
-			const activeTab = document.querySelector(
+			// Try multiple selectors to find the content container
+			let contentContainer = null;
+
+			// First try: look for tab panels (for tabbed interfaces)
+			contentContainer = document.querySelector(
 				'[role="tabpanel"]:not([hidden])',
 			);
-			if (!activeTab) {
-				console.warn("No active tab found");
-				return;
+
+			// Second try: look for main content area (common in Docusaurus)
+			if (!contentContainer) {
+				contentContainer =
+					document.querySelector("main article") ||
+					document.querySelector("main .markdown") ||
+					document.querySelector("main .container") ||
+					document.querySelector("main");
 			}
 
-			// Get all the imported document components in the active tab
-			const documentComponents = activeTab.querySelectorAll(
-				"[data-mdx-component]",
-			);
+			// Third try: look for any content area with MDX components
+			if (!contentContainer) {
+				contentContainer =
+					document.querySelector("[data-mdx-component]")?.closest("main") ||
+					document.querySelector("main");
+			}
+
+			// Final fallback: use the entire document body
+			if (!contentContainer) {
+				contentContainer = document.body;
+			}
 
 			let content = "";
+
+			// Get all the imported document components in the content container
+			const documentComponents = contentContainer.querySelectorAll(
+				"[data-mdx-component]",
+			);
 
 			// If we have MDX components, extract their text content
 			if (documentComponents.length > 0) {
@@ -45,9 +65,11 @@ const CopyButton: React.FC<CopyButtonProps> = ({
 					}
 				});
 			} else {
-				// Fallback: get all text content from the active tab
+				// Fallback: get all text content from the content container
 				content =
-					activeTab.textContent || (activeTab as HTMLElement).innerText || "";
+					contentContainer.textContent ||
+					(contentContainer as HTMLElement).innerText ||
+					"";
 			}
 
 			// Clean up the content
