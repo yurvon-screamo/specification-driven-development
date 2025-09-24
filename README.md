@@ -20,21 +20,24 @@ The main goal is to create **quality, maintainable, and business-needed** softwa
 
 ## 📚 Documentation
 
-Read the complete methodology at: **https://methodology.uwuwu.net/**
+Read the complete methodology at: **<https://methodology.uwuwu.net/>**
 
 ## 🎯 Why is this for you?
 
 ### For developers
+
 - **Clear requirements:** Understanding what needs to be done, not why, before writing code
 - **Ready plan:** Technical design with architecture, data, and error handling
 - **Less stress:** Issues are identified at the planning stage, not in production
 
 ### For managers/team leads
+
 - **Accurate estimates:** Realistic timelines and efficient resource allocation
 - **Transparency:** Complete picture of task complexity and team progress
 - **Risk management:** Technical issues are identified before work begins
 
 ### For customers/product managers
+
 - **Result guarantee:** Exactly what the business needs will be built
 - **Clear communication:** Specifications as a common language for discussing functionality
 - **AI-ready:** Specifications and guidelines - perfect context for AI agents

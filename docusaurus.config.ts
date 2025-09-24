@@ -85,13 +85,13 @@ const config: Config = {
 					type: "docSidebar",
 					sidebarId: "docsSidebar",
 					position: "left",
-					label: "📋 Документация"
+					label: "📋 Documentation"
 				},
 				{
 					type: "docSidebar",
 					sidebarId: "promptsSidebar",
 					position: "left",
-					label: "🤖 Промпты",
+					label: "🤖 Prompts",
 					docsPluginId: "prompts",
 				},
 				{
