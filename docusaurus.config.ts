@@ -67,6 +67,7 @@ const config: Config = {
 				id: "prompts",
 				path: "./promts",
 				routeBasePath: "prompts",
+				sidebarPath: "./sidebars-prompts.ts",
 			},
 		],
 	],
@@ -86,11 +87,14 @@ const config: Config = {
 					sidebarId: "docsSidebar",
 					position: "left",
 					label: "📋 Документация",
+					docsPluginId: "default",
 				},
 				{
-					to: "/prompts",
+					type: "docSidebar",
+					sidebarId: "promptsSidebar",
 					position: "left",
 					label: "🤖 Промпты",
+					docsPluginId: "prompts",
 				},
 				{
 					type: "localeDropdown",
