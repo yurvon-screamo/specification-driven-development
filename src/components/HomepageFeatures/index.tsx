@@ -1,60 +1,150 @@
+/** biome-ignore-all lint/correctness/useUniqueElementIds: Docusaurus requires static IDs for translation system */
+
+import Translate from "@docusaurus/Translate";
 import Heading from "@theme/Heading";
 import clsx from "clsx";
 import type { ReactNode } from "react";
 import styles from "./styles.module.css";
 
 type FeatureItem = {
-	title: string;
+	title: ReactNode;
 	Svg: React.ComponentType<React.ComponentProps<"svg">>;
 	description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
 	{
-		title: "Для разработчика",
+		title: (
+			<Translate
+				id="homepage.features.developer.title"
+				description="Title for developer features section"
+			/>
+		),
 		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
 		description: (
 			<>
-				<strong>Четкое ТЗ:</strong> Понимание что нужно сделать, а не почему,
-				прежде чем писать код
+				<strong>
+					<Translate
+						id="homepage.features.developer.clearRequirements"
+						description="Clear requirements feature for developers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.developer.clearRequirementsDesc"
+					description="Clear requirements description for developers"
+				/>
 				<br />
-				<strong>Готовый план:</strong> Технический дизайн с архитектурой,
-				данными и обработкой ошибок
+				<strong>
+					<Translate
+						id="homepage.features.developer.readyPlan"
+						description="Ready plan feature for developers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.developer.readyPlanDesc"
+					description="Ready plan description for developers"
+				/>
 				<br />
-				<strong>Меньше стресса:</strong> Проблемы выявляются на этапе
-				планирования, а не в production
+				<strong>
+					<Translate
+						id="homepage.features.developer.lessStress"
+						description="Less stress feature for developers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.developer.lessStressDesc"
+					description="Less stress description for developers"
+				/>
 			</>
 		),
 	},
 	{
-		title: "Для менеджера/тимлида",
+		title: (
+			<Translate
+				id="homepage.features.manager.title"
+				description="Title for manager features section"
+			/>
+		),
 		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
 		description: (
 			<>
-				<strong>Точные оценки:</strong> Реалистичные сроки и эффективное
-				распределение ресурсов
+				<strong>
+					<Translate
+						id="homepage.features.manager.accurateEstimates"
+						description="Accurate estimates feature for managers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.manager.accurateEstimatesDesc"
+					description="Accurate estimates description for managers"
+				/>
 				<br />
-				<strong>Прозрачность:</strong> Полная картина сложности задачи и
-				прогресса команды
+				<strong>
+					<Translate
+						id="homepage.features.manager.transparency"
+						description="Transparency feature for managers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.manager.transparencyDesc"
+					description="Transparency description for managers"
+				/>
 				<br />
-				<strong>Управление рисками:</strong> Технические проблемы выявляются до
-				начала работ
+				<strong>
+					<Translate
+						id="homepage.features.manager.riskManagement"
+						description="Risk management feature for managers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.manager.riskManagementDesc"
+					description="Risk management description for managers"
+				/>
 			</>
 		),
 	},
 	{
-		title: "Для заказчика/продуктового менеджера",
+		title: (
+			<Translate
+				id="homepage.features.customer.title"
+				description="Title for customer features section"
+			/>
+		),
 		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
 		description: (
 			<>
-				<strong>Гарантия результата:</strong> Будет построено именно то, что
-				нужно бизнесу
+				<strong>
+					<Translate
+						id="homepage.features.customer.resultGuarantee"
+						description="Result guarantee feature for customers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.customer.resultGuaranteeDesc"
+					description="Result guarantee description for customers"
+				/>
 				<br />
-				<strong>Ясная коммуникация:</strong> Спецификации как единый язык
-				обсуждения функциональности
+				<strong>
+					<Translate
+						id="homepage.features.customer.clearCommunication"
+						description="Clear communication feature for customers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.customer.clearCommunicationDesc"
+					description="Clear communication description for customers"
+				/>
 				<br />
-				<strong>AI-ready:</strong> Спецификации и направляющие - идеальный
-				контекст AI-агента
+				<strong>
+					<Translate
+						id="homepage.features.customer.aiReady"
+						description="AI-ready feature for customers"
+					/>
+				</strong>{" "}
+				<Translate
+					id="homepage.features.customer.aiReadyDesc"
+					description="AI-ready description for customers"
+				/>
 			</>
 		),
 	},
@@ -79,9 +169,15 @@ export default function HomepageFeatures(): ReactNode {
 		<section className={styles.features}>
 			<div className="container">
 				<div className="row">
-					{FeatureList.map((props) => (
-						<Feature key={props.title} {...props} />
-					))}
+					{FeatureList.map((props, index) => {
+						const featureKeys = ["developer", "manager", "customer"];
+						return (
+							<Feature
+								key={featureKeys[index] || `feature-${index}`}
+								{...props}
+							/>
+						);
+					})}
 				</div>
 			</div>
 		</section>

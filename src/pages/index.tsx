@@ -1,5 +1,7 @@
+/** biome-ignore-all lint/correctness/useUniqueElementIds: Docusaurus requires static IDs for translation system */
+
 import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import Translate, { translate } from "@docusaurus/Translate";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 import Layout from "@theme/Layout";
@@ -13,28 +15,44 @@ function HomepageHeader() {
 		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
 				<div className={clsx("badge", styles.heroBadge)} aria-hidden="true">
-					🚀 Specification Driven Development
+					<Translate
+						id="homepage.hero.badge"
+						description="The badge text in the hero section"
+					/>
 				</div>
 				<Heading as="h1" className="hero__title">
-					Разработка на основе <span className="cute">спецификаций</span>
+					<Translate
+						id="homepage.hero.title"
+						description="The main title of the homepage"
+						values={{
+							specifications: <span className="cute">спецификаций</span>,
+						}}
+					/>
 				</Heading>
 				<p className="hero__subtitle">
-					Единый, структурированный подход к разработке программного
-					обеспечения, который гарантирует качество, поддерживаемость и
-					соответствие бизнес-требованиям
+					<Translate
+						id="homepage.hero.subtitle"
+						description="The subtitle of the homepage"
+					/>
 				</p>
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
 						to="/documents/standards"
 					>
-						📋 Документация
+						<Translate
+							id="homepage.hero.documentationButton"
+							description="The documentation button text"
+						/>
 					</Link>
 					<Link
 						className="button button--outline button--lg"
 						to="/prompts/context"
 					>
-						🤖 Промпты
+						<Translate
+							id="homepage.hero.promptsButton"
+							description="The prompts button text"
+						/>
 					</Link>
 				</div>
 			</div>
@@ -43,11 +61,16 @@ function HomepageHeader() {
 }
 
 export default function Home(): ReactNode {
-	const { siteConfig } = useDocusaurusContext();
 	return (
 		<Layout
-			title="Разработка на основе спецификаций"
-			description="Единый, структурированный подход к разработке программного обеспечения с гарантией качества и соответствия бизнес-требованиям"
+			title={translate({
+				id: "homepage.meta.title",
+				description: "The page title for the homepage",
+			})}
+			description={translate({
+				id: "homepage.meta.description",
+				description: "The page description for the homepage",
+			})}
 		>
 			<HomepageHeader />
 			<main>

@@ -257,5 +257,117 @@
 	"theme.tags.tagsPageTitle": {
 		"message": "Tags",
 		"description": "The title of the tag list page"
+	},
+	"homepage.hero.badge": {
+		"message": "🚀 Specification Driven Development",
+		"description": "The badge text in the hero section"
+	},
+	"homepage.hero.title": {
+		"message": "Specification-driven {specifications}",
+		"description": "The main title of the homepage"
+	},
+	"homepage.hero.subtitle": {
+		"message": "A unified, structured approach to software development that ensures quality, maintainability, and business requirement compliance",
+		"description": "The subtitle of the homepage"
+	},
+	"homepage.hero.documentationButton": {
+		"message": "📋 Documentation",
+		"description": "The documentation button text"
+	},
+	"homepage.hero.promptsButton": {
+		"message": "🤖 Prompts",
+		"description": "The prompts button text"
+	},
+	"homepage.meta.title": {
+		"message": "Specification-driven development",
+		"description": "The page title for the homepage"
+	},
+	"homepage.meta.description": {
+		"message": "A unified, structured approach to software development with quality assurance and business requirement compliance",
+		"description": "The page description for the homepage"
+	},
+	"homepage.features.developer.title": {
+		"message": "For developers",
+		"description": "Title for developer features section"
+	},
+	"homepage.features.developer.clearRequirements": {
+		"message": "Clear requirements:",
+		"description": "Clear requirements feature for developers"
+	},
+	"homepage.features.developer.clearRequirementsDesc": {
+		"message": "Understanding what needs to be done, not why, before writing code",
+		"description": "Clear requirements description for developers"
+	},
+	"homepage.features.developer.readyPlan": {
+		"message": "Ready plan:",
+		"description": "Ready plan feature for developers"
+	},
+	"homepage.features.developer.readyPlanDesc": {
+		"message": "Technical design with architecture, data, and error handling",
+		"description": "Ready plan description for developers"
+	},
+	"homepage.features.developer.lessStress": {
+		"message": "Less stress:",
+		"description": "Less stress feature for developers"
+	},
+	"homepage.features.developer.lessStressDesc": {
+		"message": "Issues are identified at the planning stage, not in production",
+		"description": "Less stress description for developers"
+	},
+	"homepage.features.manager.title": {
+		"message": "For managers/team leads",
+		"description": "Title for manager features section"
+	},
+	"homepage.features.manager.accurateEstimates": {
+		"message": "Accurate estimates:",
+		"description": "Accurate estimates feature for managers"
+	},
+	"homepage.features.manager.accurateEstimatesDesc": {
+		"message": "Realistic timelines and efficient resource allocation",
+		"description": "Accurate estimates description for managers"
+	},
+	"homepage.features.manager.transparency": {
+		"message": "Transparency:",
+		"description": "Transparency feature for managers"
+	},
+	"homepage.features.manager.transparencyDesc": {
+		"message": "Complete picture of task complexity and team progress",
+		"description": "Transparency description for managers"
+	},
+	"homepage.features.manager.riskManagement": {
+		"message": "Risk management:",
+		"description": "Risk management feature for managers"
+	},
+	"homepage.features.manager.riskManagementDesc": {
+		"message": "Technical issues are identified before work begins",
+		"description": "Risk management description for managers"
+	},
+	"homepage.features.customer.title": {
+		"message": "For customers/product managers",
+		"description": "Title for customer features section"
+	},
+	"homepage.features.customer.resultGuarantee": {
+		"message": "Result guarantee:",
+		"description": "Result guarantee feature for customers"
+	},
+	"homepage.features.customer.resultGuaranteeDesc": {
+		"message": "Exactly what the business needs will be built",
+		"description": "Result guarantee description for customers"
+	},
+	"homepage.features.customer.clearCommunication": {
+		"message": "Clear communication:",
+		"description": "Clear communication feature for customers"
+	},
+	"homepage.features.customer.clearCommunicationDesc": {
+		"message": "Specifications as a common language for discussing functionality",
+		"description": "Clear communication description for customers"
+	},
+	"homepage.features.customer.aiReady": {
+		"message": "AI-ready:",
+		"description": "AI-ready feature for customers"
+	},
+	"homepage.features.customer.aiReadyDesc": {
+		"message": "Specifications and guidelines - perfect context for AI agents",
+		"description": "AI-ready description for customers"
 	}
 }
