@@ -5,8 +5,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-	title: "uwuwu.net",
-	tagline: "かわいい uwuwu スタックのプレースホルダー",
+	title: "Specification Driven Development",
 	favicon: "img/favicon.ico",
 
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -72,7 +71,7 @@ const config: Config = {
 		// Replace with your project's social card
 		image: "img/docusaurus-social-card.jpg",
 		navbar: {
-			title: "uwuwu.net",
+			title: "Specification Driven Development",
 			logo: {
 				alt: "uwuwu Logo",
 				src: "img/logo.svg",
