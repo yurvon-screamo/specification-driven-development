@@ -93,10 +93,7 @@ npm run write-translations -- --locale en
 npm run write-translations -- --locale ru
 
 npm run start -- --locale en
-npm run start -- --locale ru 
-
-npm run build -- --locale en  
-npm run build -- --locale ru 
+npm run start -- --locale ru
 ```
 
 ## Контекст для промтов

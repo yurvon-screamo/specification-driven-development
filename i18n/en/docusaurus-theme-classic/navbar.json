@@ -3,20 +3,20 @@
     "message": "Specification Driven Development",
     "description": "The title in the navbar"
   },
+  "logo.alt": {
+    "message": "uwuwu Logo",
+    "description": "The alt text of navbar logo"
+  },
   "item.label.📋 Документация": {
-    "message": "📋 Documentation",
+    "message": "📋 Документация",
     "description": "Navbar item with label 📋 Документация"
   },
   "item.label.🤖 Промпты": {
-    "message": "🤖 Prompts",
+    "message": "🤖 Промпты",
     "description": "Navbar item with label 🤖 Промпты"
   },
   "item.label.🐙 GitHub": {
     "message": "🐙 GitHub",
     "description": "Navbar item with label 🐙 GitHub"
-  },
-  "logo.alt": {
-    "message": "uwuwu Logo",
-    "description": "The alt text of navbar logo"
   }
 }
