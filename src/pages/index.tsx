@@ -45,10 +45,7 @@ function HomepageHeader() {
 							description="The documentation button text"
 						/>
 					</Link>
-					<Link
-						className="button button--outline button--lg"
-						to="/prompts/context"
-					>
+					<Link className="button button--outline button--lg" to="/prompts/">
 						<Translate
 							id="homepage.hero.promptsButton"
 							description="The prompts button text"
