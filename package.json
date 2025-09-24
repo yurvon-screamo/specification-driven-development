@@ -4,10 +4,8 @@
 	"private": true,
 	"scripts": {
 		"docusaurus": "docusaurus",
-		"start": "npm run generate-prompts && docusaurus start",
-		"build": "npm run generate-prompts && docusaurus build",
-		"generate-prompts": "node scripts/generate-prompts.js",
-		"check-prompts": "node scripts/watch-docs.js",
+		"start": "docusaurus start",
+		"build": "docusaurus build",
 		"swizzle": "docusaurus swizzle",
 		"deploy": "docusaurus deploy",
 		"clear": "docusaurus clear",
